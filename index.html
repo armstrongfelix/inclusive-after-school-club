@@ -11,6 +11,25 @@
       href="https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Manrope:wght@200..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
       rel="stylesheet"
     />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['"Gowun Batang"', "Georgia", "serif"],
+              sans: ["system-ui", "sans-serif"],
+            },
+            colors: {
+              cream: "#fdfcf8",
+              beige: "#f5f1e8",
+              charcoal: "#4a4a4a",
+              "dark-text": "#1a1a1a",
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body class="w-full container mx-auto font-'Gowun Batang'">
     <nav
@@ -24,6 +43,26 @@
       </ul>
     </nav>
 
-    <header class="flex flex-col text-center w-full boder"></header>
+    <header
+      class="flex flex-col justify-center items-center gap-16 text-center w-full boder mt-6"
+    >
+      <div
+        class="w-[95%] flex flex-col md:flex-row justify-between justify-items-center rounded-[10px] px-2 py-4 bg-[beige] hover:bg-[#4a4a4a] hover:text-white"
+      >
+        <p class="font-500">
+          Announcement: Spring ASB Election is now live for voting!
+        </p>
+        <p><a href="" class="underline">Survey here</a></p>
+      </div>
+
+      <p>Committed to all students in need</p>
+      <h1 class="text-7xl">Lincoln High School Speech and Debate Club</h1>
+      <a href="" class="hover:text-gray-400 underline">Join us</a>
+      <img
+        src="./images/Image break.png"
+        alt="library interior"
+        class="w-[100vw] h-[95vh]"
+      />
+    </header>
   </body>
 </html>
