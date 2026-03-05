@@ -36,14 +36,15 @@
       class="flex flex-start w-full border-b-[1px] border-gray-200 p-6 position-sticky top-0"
     >
       <ul class="flex gap-12">
-        <li><a href="home" class="hover:text-gray-400">Home</a></li>
-        <li><a href="details" class="hover:text-gray-400">Details</a></li>
-        <li><a href="news" class="hover:text-gray-400">News</a></li>
+        <li><a href="#home" class="hover:text-gray-400">Home</a></li>
+        <li><a href="#details" class="hover:text-gray-400">Details</a></li>
+        <li><a href="#news" class="hover:text-gray-400">News</a></li>
         <li><a href="contact" class="hover:text-gray-400">Contact</a></li>
       </ul>
     </nav>
 
     <header
+      id="home"
       class="flex flex-col justify-center items-center gap-16 text-center w-full boder mt-6"
     >
       <div
@@ -64,5 +65,102 @@
         class="w-[100vw] h-[95vh]"
       />
     </header>
+
+    <main class="mt-20 flex flex-col justify-center items-center gap-[5vh]">
+      <section
+        id="detials"
+        class="flex flex-col justify-center items-center gap-6"
+      >
+        <h2 class="text-6xl">What We Do</h2>
+        <div class="flex flex-col justify-center items-center gap-6">
+          <h5>Club Details:</h5>
+          <p class="text-3xl w-[65vw] text-center">
+            Speech and Debate is where you'll learn to think critically, speak
+            confidently, and engage in exciting competitions. Here's everything
+            you need to know:
+          </p>
+        </div>
+
+        <div
+          class="w-75vw grid md:grid-cols-2 grid-cols-1 gap-[12vw] text-center py-26 px-16"
+        >
+          <div class="w-[35vw] flex flex-col justify-center items-center gap-8">
+            <h6>What:</h6>
+            <p class="text-3xl">Ready to find your voice?</p>
+            <p class="text-xl">
+              This is a safe place to hone your skills with like-minded peers.
+            </p>
+          </div>
+
+          <div class="w-[30vw] flex flex-col justify-center items-center gap-8">
+            <h6>Who:</h6>
+            <p class="text-3xl">All Lincoln High students</p>
+            <p class="text-xl">Everyone, in any grade, is welcome to join.</p>
+          </div>
+
+          <div class="w-[30vw] flex flex-col justify-center items-center gap-8">
+            <h6>When:</h6>
+            <p class="text-3xl">Wednesday, 3:30-4:30pm</p>
+            <p class="text-xl">You’ll be out in time for the late bus home.</p>
+          </div>
+
+          <div class="w-[30vw] flex flex-col justify-center items-center gap-8">
+            <h6 class="text-3xl">Where:</h6>
+            <p>Room 204</p>
+            <p class="text-xl">
+              We meet in Mr. Smith’s room. He’s our teacher sponsor.
+            </p>
+          </div>
+        </div>
+        <div>
+          <img
+            class="w-[90vw] max-h-[90vh]"
+            src="./images/classroom.jpg"
+            alt="classroom"
+          />
+        </div>
+      </section>
+
+      <section
+        id="news"
+        class="flex flex-col justify-center items-center gap-20 p-18"
+      >
+        <h2 class="text-6xl">The latest news</h2>
+        <div
+          class="grid md:grid-cols-2 grid-cols-1 justify-center items-center gap-16 p-8 text-center"
+        >
+          <img
+            class="max-h-[45vh]"
+            src="./images/product-school-DL-yyYDDNX4-unsplash (1).jpg"
+            alt="someone doing presentation"
+          />
+
+          <div class="flex flex-col justify-center items-center gap-10">
+            <p class="text-sm">2025 Regional Results</p>
+            <p class="text-5xl">Lincoln Takes Home 1st place overall.</p>
+            <p>
+              The team took home a stunning win, claiming 3 of the top 5 spots!
+              Big shout outs to Emily, Steve, Bryan and Lizzie.
+            </p>
+          </div>
+
+          <div class="flex flex-col justify-center items-center gap-10">
+            <p class="text-sm"></p>
+            <p>Upcoming event</p>
+            <p class="text-4xl">6/11 Lunch Hour Pizza</p>
+            <img src="./images/bedroom.png" alt="" />
+          </div>
+
+          <div class="flex flex-col justify-center items-center gap-10">
+            <p>Spotlight</p>
+            <div>
+              <img src="./images/hin-in-circle.png" alt="" />
+            </div>
+            <h3 class="text-4xl">Johnny S.</h3>
+            <p>Congrats Johnny on qualifying for Nationals!</p>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
